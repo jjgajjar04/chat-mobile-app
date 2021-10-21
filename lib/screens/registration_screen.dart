@@ -31,15 +31,10 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               Flexible(
                 child: Hero(
                   tag: 'logo',
-                  child: Container(
-                    height: 200.0,
-                    child: Image.asset('images/logo.png'),
-                  ),
+                  child: Container(height: 200.0,child: Image.asset('images/logo.png')),
                 ),
               ),
-              SizedBox(
-                height: 48.0,
-              ),
+              SizedBox(height: 48.0),
               TextField(
                 keyboardType: TextInputType.emailAddress,
                 textAlign: TextAlign.center,
@@ -50,9 +45,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   email = value;
                 },
               ),
-              SizedBox(
-                height: 8.0,
-              ),
+              SizedBox(height: 8.0),
               TextField(
                 obscureText: true,
                 textAlign: TextAlign.center,
@@ -63,9 +56,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   password = value;
                 },
               ),
-              SizedBox(
-                height: 24.0,
-              ),
+              SizedBox(height: 24.0),
               RoundButton(
                 color: Colors.blueAccent,
                 title: 'Register',
