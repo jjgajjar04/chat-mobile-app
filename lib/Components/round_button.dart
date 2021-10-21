@@ -19,9 +19,7 @@ class RoundButton extends StatelessWidget {
           onPressed: onPressed as void Function()?,
           minWidth: 200.0,
           height: 42.0,
-          child: Text(
-            title!,
-          ),
+          child: Text(title!),
         ),
       ),
     );
